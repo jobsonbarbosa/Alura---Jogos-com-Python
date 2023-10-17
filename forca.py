@@ -1,21 +1,18 @@
-print("********************************")
-print("Jobs Play - Jogo da Forca")
-print("********************************")
+def jogar():
+    print("********************************")
+    print("Jobs Play - Jogo da Forca")
+    print("********************************")
 
-palavra_secreta = "abacatee"
-lista_letras = []
+    palavra_secreta = "abacate"
 
-index = 0
-for l in palavra_secreta:
-    print(index)
-    letra = input("Digita um letra: ")
+    enforcou = False
+    acertou = False
+    #Enquanto não enforcou E não acertou
+    while(not enforcou and not acertou):
+        print("jogando....")
 
-    if l.upper() == letra.upper():
+    print("Fim do jogo")
 
-        lista_letras[index] = l
-        print("contem")
-        print(lista_letras[index])
-    else:
-        print("Não contem")
-    index = index + 1
-#print(lista_letras)
+
+if(__name__ == "__main__"):
+    jogar()
